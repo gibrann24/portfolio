@@ -4,8 +4,8 @@
       "status": "active",
       "text": "Available to work - 485 visa holder"
     },
-    "greeting": "Testing 👋🏻,",
-    "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "greeting": "Hey mate 👋🏻,",
+    "intro": "I’m Gibran — a Senior Product Manager @ Yourpay, balancing user rants, business wants, designer slants, and developer grunts, and merging it all into production (usually on Fridays). I’ve spent over 4 years with Figma, Jira, and VS Code open on my never-shut-down Mac. When I’m not optimizing funnels, I’m optimizing my deadlift or flight itinerary.",
     "resumeLink": "#",
     "socialLinks": [
       {
@@ -38,7 +38,7 @@
         "id": 1,
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "thumbnail": "",
-        "chips": ["Chips 1", "Chips 2", "Chips 3"],
+        "chips": ["Chips 1", "Chips 2", "Chips 3", "Chips 4", "Chips 5"],
         "url": "https://placeholdercard.com"
       },
       {
