@@ -52,7 +52,7 @@
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.85rem;
   --font-size-md: 0.9rem;
-  --font-size-base: 1.4rem;
+  --font-size-base: 1.6rem;
   --font-size-lg: 1rem;
   --font-size-xl: 1.1rem;
   --font-size-2xl: 1.25rem;
@@ -64,6 +64,7 @@
   --font-size-8xl: 2.25rem;
 
   /* Font Weights */
+  --font-weight-thin: 320;
   --font-weight-normal: 400;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
@@ -189,15 +190,15 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  padding: 5px 9px;
+  padding: 6px 18px;
   border-radius: var(--radius-full);
   background: var(--color-gray-300);
-  font-size: 0.9rem;
-  color: var(--color-gray-600);
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-500);
   flex-shrink: 0;
-  border: 1px solid var(--color-gray-100);
+  border: 1px solid var(--color-gray-200);
   box-shadow: var(--shadow-sm);
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
 }
 
 .availability .indicator {
@@ -219,7 +220,7 @@ p {
   transform: translate(-50%, -50%);
   background: var(--color-success);
   opacity: 0.4;
-  animation: ripplePulse 1.8s ease-out infinite;
+  animation: ripplePulse 1s ease-out infinite;
 }
 
 .availability .indicator.active::after {
@@ -242,7 +243,7 @@ p {
 
 .hero h1 {
   flex: 1;
-  font-size: var(--font-size-8xl);
+  font-size: var(--font-size-6xl);
   font-weight: var(--font-weight-bold);
   min-width: 240px;
 }
@@ -272,10 +273,11 @@ p {
   color: var(--color-primary);
   text-decoration: none;
   border-radius: var(--radius-md);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-normal);
   box-shadow: var(--shadow-md);
   transition: all var(--transition-fast);
   border: 2px solid var(--color-white);
+  font-size: var(--font-size-lg);
 }
 
 .btn-primary:hover {
@@ -287,7 +289,7 @@ p {
 }
 
 .btn-primary .iconify {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 .btn-secondary {
@@ -323,8 +325,8 @@ p {
 }
 
 .social-links a {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: var(--radius-md);
   display: inline-flex;
   align-items: center;
@@ -338,7 +340,7 @@ p {
 }
 
 .social-links a:hover {
-  transform: scale(1.15);
+  transform: scale(1.2);
   box-shadow: none;
   filter: brightness(1.05);
 }
@@ -454,7 +456,7 @@ p {
 }
 
 .thumbnail {
-  height: 180px;
+  height: 200px;
   background: linear-gradient(
     135deg,
     var(--color-gray-400),
@@ -485,8 +487,8 @@ p {
   border-radius: var(--radius-full);
   background: var(--color-bg-chip);
   color: var(--color-primary);
-  font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-thin);
+  font-size: var(--font-size-xs);
 }
 
 .experience-cta {
@@ -695,7 +697,8 @@ p {
 }
 
 .job-description {
-  font-size: var(--font-size-base);
+  /* font-size: var(--font-size-base); */
+  font-size: var(--font-size-xs);
   line-height: var(--line-height-normal);
   color: var(--color-gray-600);
   margin: 0;
