@@ -17,17 +17,17 @@
         "name": "Medium",
         "type": "img",
         "icon": "assets/medium-logo.svg",
-        "url": "#"
+        "url": "https://medium.com/@gibrann24"
       },
       {
         "name": "Gmail",
         "icon": "mdi:gmail",
-        "url": "#"
+        "url": "mailto:contact@gibran.design"
       },
       {
         "name": "WhatsApp",
         "icon": "mdi:whatsapp",
-        "url": "#"
+        "url": "https://wa.me/61434369720"
       }
     ]
   },

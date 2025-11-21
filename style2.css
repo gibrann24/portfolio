@@ -46,13 +46,13 @@
   --color-bg-chip: #e0e7ff;
 
   /* Typography */
-  --font-family: "Lexend", system-ui, -apple-system, BlinkMacSystemFont,
+  --font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   --font-size-base: 16px;
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.85rem;
   --font-size-md: 0.9rem;
-  --font-size-base: 0.95rem;
+  --font-size-base: 1.4rem;
   --font-size-lg: 1rem;
   --font-size-xl: 1.1rem;
   --font-size-2xl: 1.25rem;
