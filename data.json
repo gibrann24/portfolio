@@ -6,7 +6,7 @@
     },
     "greeting": "Hey mate 👋🏻,",
     "intro": "I’m Gibran — a Senior Product Manager @ Yourpay, balancing user rants, business wants, designer slants, and developer grunts, and merging it all into production (usually on Fridays). I’ve spent over 4 years with Figma, Jira, and VS Code open on my never-shut-down Mac. When I’m not optimizing funnels, I’m optimizing my deadlift or flight itinerary.",
-    "resumeLink": "#",
+    "resumeLink": "https://drive.google.com/file/d/1qoFzuQyoLpY85wcK83MY_hRZHDFcXhEM/view?usp=sharing",
     "socialLinks": [
       {
         "name": "LinkedIn",
@@ -153,9 +153,9 @@
         "jobs": [
           {
             "id": 1,
-            "title": "Graphic Designer",
-            "duration": "July 2025 - going strong",
-            "totalDuration": "",
+            "title": "Senior Product Manager",
+            "duration": "August 2025 - Present",
+            "totalDuration": "Going strong",
             "location": "Jakarta, Indonesia",
             "type": "Fulltime, onsite",
             "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
@@ -163,11 +163,11 @@
           },
           {
             "id": 2,
-            "title": "Frontend Engineer",
-            "duration": "January 2025 - May 2025",
-            "totalDuration": "4 year 11 months",
+            "title": "Product Manager",
+            "duration": "January 2025 - August 2025",
+            "totalDuration": "8 months",
             "location": "Jakarta, Indonesia",
-            "type": "Part-time, onsite",
+            "type": "Fulltime, onsite",
             "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
             "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
           },
