@@ -539,18 +539,13 @@ p {
 }
 
 .company-badge {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding-top: 6px;
-}
-
-.company-badge::before {
-  content: "";
-  display: block;
   width: 64px;
   height: 64px;
   border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* important so image stays inside */
   background: linear-gradient(
     135deg,
     var(--color-accent-cyan),
@@ -558,7 +553,15 @@ p {
   );
 }
 
-.company-badge[data-variant="b"]::before {
+/* Badge image */
+.company-badge-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Variant B */
+.company-badge[data-variant="b"] {
   background: linear-gradient(
     135deg,
     var(--color-primary-light),
@@ -566,13 +569,15 @@ p {
   );
 }
 
-.company-badge[data-variant="c"]::before {
+/* Variant C */
+.company-badge[data-variant="c"] {
   background: linear-gradient(
     135deg,
     var(--color-accent-purple),
     var(--color-secondary)
   );
 }
+
 
 .company-content {
   display: flex;

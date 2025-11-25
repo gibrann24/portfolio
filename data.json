@@ -6,7 +6,7 @@
     },
     "greeting": "Hey mate 👋🏻,",
     "intro": "I’m Gibran — a Senior Product Manager @ Yourpay, balancing user rants, business wants, designer slants, and developer grunts, and merging it all into production (usually on Fridays). I’ve spent over 4 years with Figma, Jira, and VS Code open on my never-shut-down Mac. When I’m not optimizing funnels, I’m optimizing my deadlift or flight itinerary.",
-    "resumeLink": "https://drive.google.com/file/d/1qoFzuQyoLpY85wcK83MY_hRZHDFcXhEM/view?usp=sharing",
+    "resumeLink": "https://drive.google.com/file/d/19Y2W3Thz_nTMd_iiQnzpuw69Cw1a40Uw/view?usp=sharing",
     "socialLinks": [
       {
         "name": "LinkedIn",
@@ -36,9 +36,9 @@
     "projects": [
       {
         "id": 1,
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Maxim App Revamp: Boost user acquisition through an improved ordering experience",
         "thumbnail": "",
-        "chips": ["Chips 1", "Chips 2", "Chips 3", "Chips 4", "Chips 5"],
+        "chips": ["Design Thinking", "Redesign", "Case Study", "Mobile app", "Product Designer"],
         "url": "https://placeholdercard.com"
       },
       {
@@ -147,9 +147,10 @@
     "title": "Here are some of my professional work experiences ...",
     "companies": [
       {
-        "id": "company-a",
-        "name": "Company A",
+        "id": "Yourpay",
+        "name": "Yourpay - PT Rpay Finansial Digital Indonesia",
         "badge": "a",
+        "badgeImage": "./assets/medium-logo.svg",
         "jobs": [
           {
             "id": 1,

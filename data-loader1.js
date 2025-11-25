@@ -141,8 +141,16 @@ class PortfolioDataLoader {
       experience.companies.forEach((company) => {
         const article = this.createElement("article", ["company"]);
 
+        // console.log("Badge image:", company.badgeImage);
+
         const badge = this.createElement("div", ["company-badge"]);
         badge.setAttribute("data-variant", company.badge);
+
+        const badgeImg = this.createElement("img", ["company-badge-img"]);
+        badgeImg.src = company.badgeImage;
+        badgeImg.alt = `${company.name} badge`;
+        badge.appendChild(badgeImg);
+        
 
         const content = this.createElement("div", ["company-content"]);
 
