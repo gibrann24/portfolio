@@ -457,11 +457,12 @@ p {
 
 .thumbnail {
   height: 200px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     135deg,
     var(--color-gray-400),
     var(--color-gray-500)
-  );
+  ); */
+  background-image: url('./assets/medium-logo.svg');
 }
 
 .project-content {
