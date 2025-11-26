@@ -37,21 +37,21 @@
       {
         "id": 1,
         "title": "Maxim App Revamp: Boost user acquisition through an improved ordering experience",
-        "thumbnail": "",
+        "thumbnail": "./assets/maxim_thumbnail.png",
         "chips": ["Design Thinking", "Redesign", "Case Study", "Mobile app", "Product Designer"],
         "url": "https://placeholdercard.com"
       },
       {
         "id": 2,
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "thumbnail": "",
+        "thumbnail": "./assets/walkiddie.jpg",
         "chips": ["Chips 1", "Chips 2", "Chips 3"],
         "url": "https://placeholdercard.com"
       },
       {
         "id": 3,
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "thumbnail": "",
+        "thumbnail": "./assets/portelier.jpeg",
         "chips": ["Chips 1", "Chips 2", "Chips 3"],
         "url": "https://placeholdercard.com"
       }

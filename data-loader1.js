@@ -85,47 +85,61 @@ class PortfolioDataLoader {
     }
   }
 
-  // Populate Featured Work
-  populateFeaturedWork() {
-    const { featuredWork } = this.data;
 
-    const title = document.querySelector(".work h2");
-    if (title) title.textContent = featuredWork.title;
+// Populate Featured Work
+populateFeaturedWork() {
+  const { featuredWork } = this.data;
 
-    const grid = document.querySelector(".card-grid");
-    if (grid) {
-      grid.innerHTML = "";
-      featuredWork.projects.forEach((project) => {
-        const article = this.createElement("article", ["project-card"]);
+  const title = document.querySelector(".work h2");
+  if (title) title.textContent = featuredWork.title;
 
-        // Make card clickable if URL exists
-        if (project.url) {
-          article.style.cursor = "pointer";
-          article.addEventListener("click", () => {
-            window.open(project.url, "_blank");
-          });
-        }
+  const grid = document.querySelector(".card-grid");
+  if (grid) {
+    grid.innerHTML = "";
+    featuredWork.projects.forEach((project) => {
+      const article = this.createElement("article", ["project-card"]);
 
-        const thumbnail = this.createElement("div", ["thumbnail"]);
-        const content = this.createElement("div", ["project-content"]);
-        const heading = this.createElement("h3");
-        heading.textContent = project.title;
-
-        const chipGroup = this.createElement("div", ["chip-group"]);
-        project.chips.forEach((chipText) => {
-          const chip = this.createElement("span", ["chip"]);
-          chip.textContent = chipText;
-          chipGroup.appendChild(chip);
+      // Make card clickable if URL exists
+      if (project.url) {
+        article.style.cursor = "pointer";
+        article.addEventListener("click", () => {
+          window.open(project.url, "_blank");
         });
+      }
 
-        content.appendChild(heading);
-        content.appendChild(chipGroup);
-        article.appendChild(thumbnail);
-        article.appendChild(content);
-        grid.appendChild(article);
+      const thumbnail = this.createElement("div", ["thumbnail"]);
+      // <-- NEW: apply thumbnail image from data.json -->
+      if (project.thumbnail && project.thumbnail.length > 0) {
+        thumbnail.style.backgroundImage = `url(${project.thumbnail})`;
+      } else {
+        // optional fallback image if none provided
+        thumbnail.style.backgroundImage = `url('./assets/placeholder.png')`;
+      }
+      // recommended sizing to avoid zooming/cropping
+      thumbnail.style.backgroundSize = "contain";
+      thumbnail.style.backgroundPosition = "center";
+      thumbnail.style.backgroundRepeat = "no-repeat";
+
+      const content = this.createElement("div", ["project-content"]);
+      const heading = this.createElement("h3");
+      heading.textContent = project.title;
+
+      const chipGroup = this.createElement("div", ["chip-group"]);
+      project.chips.forEach((chipText) => {
+        const chip = this.createElement("span", ["chip"]);
+        chip.textContent = chipText;
+        chipGroup.appendChild(chip);
       });
-    }
+
+      content.appendChild(heading);
+      content.appendChild(chipGroup);
+      article.appendChild(thumbnail);
+      article.appendChild(content);
+      grid.appendChild(article);
+    });
   }
+}
+
 
   // Populate Experience Section
   populateExperience() {

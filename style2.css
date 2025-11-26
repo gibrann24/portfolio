@@ -444,21 +444,45 @@ p {
   display: flex;
   flex-direction: column;
   border-radius: var(--radius-xl);
+  width: 100%;
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-gray-200);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
+.project-card .thumbnail {
+  width: 100%;
+  height: 220px;         /* adjust as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* or `contain` if you prefer full image */
+  display: block;
+}
 .project-card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
 }
 
+.project-card .thumbnail,
+.project-card .project-thumbnail,
 .thumbnail {
-  height: 200px;
-  background-image: url('./assets/medium-logo.svg');
+  width: 100%;
+  height: 220px; /* adjust as you prefer */
+  background-size: cover; /* or 'contain' if you prefer */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
 }
+
+
+.project-thumbnail {
+  width: 100%;
+  height: 200px; /* or 250–300 depending on design */
+  background-size: cover; /* try cover to fill the area */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 .project-content {
   padding: var(--space-xl);
@@ -1159,8 +1183,10 @@ p {
   }
 
   .card-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    gap: 20px;
   }
+  
 
   .company {
     grid-template-columns: 1fr;
