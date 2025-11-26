@@ -38,21 +38,21 @@
         "id": 1,
         "title": "Maxim App Revamp: Boost user acquisition through an improved ordering experience",
         "thumbnail": "./assets/maxim_thumbnail.png",
-        "chips": ["Design Thinking", "Redesign", "Case Study", "Mobile app", "Product Designer"],
+        "chips": ["Product Designer", "Redesign", "Case Study", "Mobile app", "Design Thinking"],
         "url": "https://placeholdercard.com"
       },
       {
         "id": 2,
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "thumbnail": "./assets/walkiddie.jpg",
-        "chips": ["Chips 1", "Chips 2", "Chips 3"],
-        "url": "https://placeholdercard.com"
+        "chips": ["Product Owner", "Web", "Scrum", "Dashboard"],
+        "url": "https://portfolio-gibran.notion.site/Walkidde-Toys-b0668741bf32417ebc4e53bd8385601b?source=copy_link"
       },
       {
         "id": 3,
         "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "thumbnail": "./assets/portelier.jpeg",
-        "chips": ["Chips 1", "Chips 2", "Chips 3"],
+        "chips": ["Frontend Engineer", "ReactJS", "Web", "E-Commerce"],
         "url": "https://placeholdercard.com"
       }
     ]
@@ -186,7 +186,7 @@
       },
       {
         "id": "company-b",
-        "name": "Company B",
+        "name": "Indonesian Student Association of Australia",
         "badge": "b",
         "jobs": [
           {
@@ -203,7 +203,7 @@
       },
       {
         "id": "company-c",
-        "name": "Company C",
+        "name": "LingoTalk",
         "badge": "c",
         "jobs": [
           {
@@ -215,12 +215,19 @@
             "type": "",
             "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
             "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-          },
+          }
+        ]
+      },
+      {
+        "id": "company-d",
+        "name": "University of Indonesia",
+        "badge": "c",
+        "jobs": [
           {
-            "id": 2,
-            "title": "Lead Product Designer",
+            "id": 1,
+            "title": "Product Owner",
             "duration": "August 2024 - August 2025",
-            "totalDuration": "6 months",
+            "totalDuration": "11 months",
             "location": "Jakarta, Indonesia",
             "type": "",
             "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",

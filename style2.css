@@ -608,6 +608,7 @@ p {
 .company-header {
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   gap: var(--space-md);
   cursor: pointer;
