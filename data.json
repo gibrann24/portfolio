@@ -159,9 +159,19 @@
             "totalDuration": "Going strong",
             "location": "Jakarta, Indonesia",
             "type": "Fulltime, onsite",
-            "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-            "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+            "descriptionPreview": [
+                "Led the Tamasya Squad, overseeing product strategy for the Taiwan, Malaysia, and South Korea markets while owning the upper funnel (leads, registration, verification).",
+                  "Improved onboarding performance by incorporating OCR technology to streamline data extraction, reduce manual input, and minimize user friction—resulting in a +14.2% increase in CVR from leads to registration and a +28.4% improvement from registration to verification."],
+            "descriptionFull": [
+                  "Reduced user complaints related to registration and verification by 89.3% through UX improvements, clearer guidance, and enhanced error-handling flows.",
+                  "Launched enhanced verification flows through Face ID integration, strengthening security and reducing fraudulent attempts while keeping friction low.",
+                  "Accelerated onboarding speed by reducing registration and verification time by 68%, significantly improving the upper funnel.",
+                  "Introduced a reminder feature prompting users to add their overseas phone number, achieving a +43.9% CVR for this step.",
+                  "Collaborated closely with engineering, design, and compliance teams—as well as external stakeholders—to deliver scalable, regulatory-aligned onboarding experiences across multiple countries.",
+                  "Accelerated onboarding speed by reducing registration and verification time by 68%, significantly improving the upper funnel."
+                ]
           },
+          
           {
             "id": 2,
             "title": "Product Manager",

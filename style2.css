@@ -732,17 +732,19 @@ p {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  /* gap: var(--space-xs); */
+  gap: 0;
 }
 
 .job-description .description-preview {
-  margin: 0;
+  padding: 0px;
 }
 
 .job-description .description-full {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  padding: 0;
   transition: max-height 0.45s ease, opacity 0.35s ease;
 }
 
@@ -752,8 +754,17 @@ p {
 }
 
 .job-description.expanded .description-full {
-  max-height: 500px;
+  max-height: 600px;
   opacity: 1;
+}
+
+.job-description ul {
+  margin: 0;
+  padding-left: 0.75rem;
+}
+
+.job-description li {
+  margin-bottom: 4px;
 }
 
 .job-readmore {

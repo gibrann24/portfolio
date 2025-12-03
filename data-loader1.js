@@ -212,25 +212,57 @@ populateFeaturedWork() {
             ? `${job.location} | ${job.type}`
             : job.location;
 
-          // Job description
-          const descWrapper = this.createElement("div", ["job-description"]);
+        // Job description
+const descWrapper = this.createElement("div", ["job-description"]);
 
-          const readMore = this.createElement("button", ["job-readmore", "read-more-btn"]);
-          readMore.textContent = "Read more...";
+const readMore = this.createElement("button", ["job-readmore", "read-more-btn"]);
+readMore.textContent = "Read more...";
 
-          const readLess = this.createElement("button", ["job-readmore", "read-less-btn"]);
-          readLess.textContent = "…Read less";
-          readLess.style.display = "none";
+const readLess = this.createElement("button", ["job-readmore", "read-less-btn"]);
+readLess.textContent = "…Read less";
+readLess.style.display = "none";
 
-          const preview = this.createElement("p", ["description-preview"]);
-          preview.textContent = `${job.descriptionPreview} `;
-          preview.appendChild(readMore);
+// ----- PREVIEW SECTION -----
+const preview = this.createElement("div", ["description-preview"]);
+const previewList = this.createElement("ul");
 
-          const full = this.createElement("div", ["description-full"]);
-          const fullP = this.createElement("p");
-          fullP.textContent = `${job.descriptionFull} `;
-          fullP.appendChild(readLess);
-          full.appendChild(fullP);
+// If preview is an array → create bullet points
+if (Array.isArray(job.descriptionPreview)) {
+  job.descriptionPreview.forEach(item => {
+    const li = this.createElement("li");
+    li.textContent = item;
+    previewList.appendChild(li);
+  });
+} else {
+  // If it's a string → still show it inside <li>
+  const li = this.createElement("li");
+  li.textContent = job.descriptionPreview;
+  previewList.appendChild(li);
+}
+
+preview.appendChild(previewList);
+preview.appendChild(readMore);
+
+// ----- FULL SECTION -----
+const full = this.createElement("div", ["description-full"]);
+const fullList = this.createElement("ul");
+
+if (Array.isArray(job.descriptionFull)) {
+  job.descriptionFull.forEach(item => {
+    const li = this.createElement("li");
+    li.textContent = item;
+    fullList.appendChild(li);
+  });
+} else {
+  const li = this.createElement("li");
+  li.textContent = job.descriptionFull;
+  fullList.appendChild(li);
+}
+
+full.appendChild(fullList);
+full.appendChild(readLess);
+
+        
 
           descWrapper.appendChild(preview);
           descWrapper.appendChild(full);
