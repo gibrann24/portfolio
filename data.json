@@ -160,7 +160,7 @@
             "location": "Jakarta, Indonesia",
             "type": "Fulltime, onsite",
             "descriptionPreview": [
-                "Led the Tamasya Squad, overseeing product strategy for the Taiwan, Malaysia, and South Korea markets while owning the upper funnel (leads, registration, verification).",
+                  "Led the Tamasya Squad, overseeing product strategy for the Taiwan, Malaysia, and South Korea markets while owning the upper funnel (leads, registration, verification).",
                   "Improved onboarding performance by incorporating OCR technology to streamline data extraction, reduce manual input, and minimize user friction—resulting in a +14.2% increase in CVR from leads to registration and a +28.4% improvement from registration to verification."],
             "descriptionFull": [
                   "Reduced user complaints related to registration and verification by 89.3% through UX improvements, clearer guidance, and enhanced error-handling flows.",
@@ -189,8 +189,18 @@
             "totalDuration": "1 year 3 months",
             "location": "Jakarta, Indonesia",
             "type": "Contract, hybrid",
-            "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-            "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+            "descriptionPreview": [
+              "Led the end-to-end creation of the company’s design system using the Atomic Design framework and tailored it for a software-driven user interface (SDUI), establishing a unified visual language and component library adopted across all product teams.",
+              "Successfully migrated and redesigned the entire mobile app from Design 2.0 to 3.0.",
+              "Defined scalable UI foundations (tokens, color, typography, spacing, grid systems) and standardized components (buttons, forms, navigation, cards) to ensure consistency and efficiency."],
+            "descriptionFull": [
+              "Collaborated closely with engineering to implement the design system in code, aligning tokens, interaction states, specifications, and accessibility standards.",
+              "Reduced design and development time by 34% through reusable components, improved workflows, and comprehensive documentation—enabling faster and more consistent product delivery.",
+              "Championed UX best practices by driving user research, usability testing, A/B testing, and iterative improvements informed by data and user insights.",
+              "Provided coaching and mentorship to designers, resulting in one team member’s promotion to Senior Designer.",
+              "Structured and developed the design team by defining clear capability areas—UX Research, UX Writing, UI Design, Design System Management, and Illustration—ensuring strong specialization and collaboration.",
+              "Led the hiring process for additional designers, strengthening team capacity and elevating overall design quality."
+            ]
           }
         ]
       },
@@ -269,17 +279,9 @@
       {
         "id": 3,
         "badge": "c",
-        "institution": "University of Indonesia Negara",
-        "degree": "",
-        "period": "",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-      },
-      {
-        "id": 4,
-        "badge": "d",
-        "institution": "SMA Arunika",
-        "degree": "",
-        "period": "",
+        "institution": "Labschool Kebayoran Highschool",
+        "degree": "Natural Science",
+        "period": "July 2015 - July 2018",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       }
     ]
