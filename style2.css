@@ -590,13 +590,13 @@ p {
 }
 
 /* Variant C */
-.company-badge[data-variant="c"] {
+/* .company-badge[data-variant="c"] {
   background: linear-gradient(
     135deg,
-    var(--color-white,
+    var(--color-white),
     var(--color-secondary)
   );
-}
+} */
 
 
 .company-content {
@@ -830,9 +830,10 @@ p {
   align-items: center;
   width: 56px;
   height: 56px;
-  border-radius: var(--radius-lg);
+  /* border-radius: var(--radius-lg);
   border: 1px solid var(--color-gray-200);
-  background: var(--color-gray-50);
+  background: var(--color-gray-50); */
+  object-fit: contain;
 }
 
 .education-badge::after {

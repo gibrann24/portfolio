@@ -296,8 +296,16 @@ full.appendChild(readLess);
       education.items.forEach((item) => {
         const article = this.createElement("article", ["education-item"]);
 
+        // const badge = this.createElement("div", ["education-badge"]);
+        // badge.setAttribute("data-variant", item.badge);
+
         const badge = this.createElement("div", ["education-badge"]);
-        badge.setAttribute("data-variant", item.badge);
+
+        const img = document.createElement("img");
+        img.src = item.badge;  // badge path comes from JSON
+        img.alt = item.institution + " logo";
+
+badge.appendChild(img);
 
         const content = this.createElement("div", ["education-content"]);
 
