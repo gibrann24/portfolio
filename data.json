@@ -150,7 +150,7 @@
         "id": "Yourpay",
         "name": "Yourpay - PT Rpay Finansial Digital Indonesia",
         "badge": "a",
-        "badgeImage": "./assets/medium-logo.svg",
+        "badgeImage": "./assets/rpaylogo.jpeg",
         "jobs": [
           {
             "id": 1,
@@ -208,6 +208,7 @@
         "id": "company-b",
         "name": "Indonesian Student Association of Australia",
         "badge": "b",
+        "badgeImage": "./assets/ppi-australia.jpg",
         "jobs": [
           {
             "id": 1,
@@ -225,6 +226,7 @@
         "id": "company-c",
         "name": "LingoTalk",
         "badge": "c",
+        "badgeImage": "./assets/lingotalk.png",
         "jobs": [
           {
             "id": 1,
@@ -242,6 +244,7 @@
         "id": "company-d",
         "name": "University of Indonesia",
         "badge": "c",
+        "badgeImage": "./assets/universitas-indonesia.png",
         "jobs": [
           {
             "id": 1,
