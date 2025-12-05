@@ -299,18 +299,33 @@
         "tools": [
           {
             "name": "Tool 1",
-            "type": "svg",
-            "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='%23000'/%3E%3C/svg%3E"
+            "type": "iconify",
+            "icon": "logos:trello"
           },
           {
             "name": "Figma",
             "type": "iconify",
-            "icon": "logos:figma"
+            "icon": "logos:mixpanel"
+          },
+          {
+            "name": "Figma",
+            "type": "iconify",
+            "icon": "logos:hotjar"
+          },
+          {
+            "name": "Figma",
+            "type": "iconify",
+            "icon": "logos:miro"
+          },
+          {
+            "name": "Figma",
+            "type": "iconify",
+            "icon": "logos:slack"
           },
           {
             "name": "Framer",
             "type": "iconify",
-            "icon": "logos:framer"
+            "icon": "logos:jira"
           }
         ]
       },
@@ -319,29 +334,14 @@
         "name": "as a Product Designer (UI/UX)",
         "tools": [
           {
-            "name": "Tool 1",
-            "type": "svg",
-            "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='%23000'/%3E%3C/svg%3E"
-          },
-          {
             "name": "Figma",
             "type": "iconify",
             "icon": "logos:figma"
           },
           {
-            "name": "Framer",
-            "type": "iconify",
-            "icon": "logos:framer"
-          },
-          {
-            "name": "Tool 4",
-            "type": "svg",
-            "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='%23000'/%3E%3C/svg%3E"
-          },
-          {
-            "name": "Figma",
-            "type": "iconify",
-            "icon": "logos:figma"
+            "name": "Image",
+            "type": "image",
+            "icon": "assets/lingotalk.png"
           },
           {
             "name": "Framer",
@@ -355,34 +355,64 @@
         "name": "as a Developer (FE/BE)",
         "tools": [
           {
-            "name": "Tool 1",
-            "type": "svg",
-            "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='%23000'/%3E%3C/svg%3E"
-          },
-          {
             "name": "Figma",
             "type": "iconify",
-            "icon": "logos:figma"
+            "icon": "logos:react"
           },
           {
             "name": "Framer",
             "type": "iconify",
-            "icon": "logos:framer"
-          },
-          {
-            "name": "Tool 2",
-            "type": "svg",
-            "icon": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z' fill='%23fff'/%3E%3C/svg%3E"
+            "icon": "logos:html-5"
           },
           {
             "name": "YouTube",
             "type": "iconify",
-            "icon": "logos:youtube-icon"
+            "icon": "logos:css-3"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:django"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:swift"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:postgresql"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:python"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:git"
+          },
+          {
+            "name": "Springboot",
+            "type": "iconify",
+            "icon": "logos:springboot"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:nodejs"
+          },
+          {
+            "name": "YouTube",
+            "type": "iconify",
+            "icon": "logos:postman"
           },
           {
             "name": "Framer",
             "type": "iconify",
-            "icon": "logos:framer"
+            "icon": "logos:javascript"
           }
         ]
       }
