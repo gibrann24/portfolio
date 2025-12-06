@@ -975,9 +975,13 @@ p {
 }
 
 .tool-icon img {
-  width: 40px;
-  height: 40px;
+  max-width: 54px;
+  max-height: 54px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
+
 
 /* ========================================
    Contact Section
@@ -1347,3 +1351,4 @@ p {
     transform: none;
   }
 }
+

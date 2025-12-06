@@ -360,9 +360,27 @@ badge.appendChild(img);
 
         const iconsContainer = this.createElement("div", ["tool-icons"]);
 
+        // category.tools.forEach((tool) => {
+        //   const iconDiv = this.createElement("div", ["tool-icon"]);
+
+        //   if (tool.type === "svg") {
+        //     const img = this.createElement("img", [], {
+        //       src: tool.icon,
+        //       alt: tool.name,
+        //     });
+        //     iconDiv.appendChild(img);
+        //   } else if (tool.type === "iconify") {
+        //     const span = this.createIcon(tool.icon);
+        //     span.style.fontSize = "48px";
+        //     iconDiv.appendChild(span);
+        //   }
+
+        //   iconsContainer.appendChild(iconDiv);
+        // });
+
         category.tools.forEach((tool) => {
           const iconDiv = this.createElement("div", ["tool-icon"]);
-
+        
           if (tool.type === "svg") {
             const img = this.createElement("img", [], {
               src: tool.icon,
@@ -373,10 +391,19 @@ badge.appendChild(img);
             const span = this.createIcon(tool.icon);
             span.style.fontSize = "48px";
             iconDiv.appendChild(span);
+          } else if (tool.type === "image") {
+            const img = this.createElement("img", [], {
+              src: tool.icon,
+              alt: tool.name,
+            });
+            iconDiv.appendChild(img);
           }
-
+        
           iconsContainer.appendChild(iconDiv);
         });
+        
+
+
 
         div.appendChild(heading);
         div.appendChild(iconsContainer);
