@@ -310,7 +310,12 @@
         "name": "as a Product Manager",
         "tools": [
           {
-            "name": "Tool 1",
+            "name": "Jira",
+            "type": "iconify",
+            "icon": "logos:jira"
+          },
+          {
+            "name": "Trello",
             "type": "iconify",
             "icon": "logos:trello"
           },
@@ -320,24 +325,19 @@
             "icon": "logos:mixpanel"
           },
           {
-            "name": "Figma",
+            "name": "Hotjar",
             "type": "iconify",
             "icon": "logos:hotjar"
           },
           {
-            "name": "Figma",
+            "name": "Miro",
             "type": "iconify",
             "icon": "logos:miro"
           },
           {
-            "name": "Figma",
+            "name": "Slack",
             "type": "iconify",
             "icon": "logos:slack"
-          },
-          {
-            "name": "Framer",
-            "type": "iconify",
-            "icon": "logos:jira"
           }
         ]
       },
@@ -367,44 +367,49 @@
         "name": "as a Developer (FE/BE)",
         "tools": [
           {
-            "name": "Figma",
-            "type": "iconify",
-            "icon": "logos:react"
-          },
-          {
-            "name": "Framer",
+            "name": "html",
             "type": "iconify",
             "icon": "logos:html-5"
           },
           {
-            "name": "YouTube",
+            "name": "css",
             "type": "iconify",
             "icon": "logos:css-3"
           },
           {
-            "name": "YouTube",
+            "name": "Javascript",
             "type": "iconify",
-            "icon": "logos:django"
+            "icon": "logos:javascript"
           },
           {
-            "name": "YouTube",
+            "name": "React",
+            "type": "iconify",
+            "icon": "logos:react"
+          },
+          {
+            "name": "Swift",
             "type": "iconify",
             "icon": "logos:swift"
           },
           {
-            "name": "YouTube",
-            "type": "iconify",
-            "icon": "logos:postgresql"
-          },
-          {
-            "name": "YouTube",
+            "name": "Python",
             "type": "iconify",
             "icon": "logos:python"
           },
           {
-            "name": "YouTube",
+            "name": "Django",
             "type": "iconify",
-            "icon": "logos:git"
+            "icon": "logos:django"
+          },
+          {
+            "name": "Postgresql",
+            "type": "iconify",
+            "icon": "logos:postgresql"
+          },
+          {
+            "name": "Nodejs",
+            "type": "iconify",
+            "icon": "logos:nodejs"
           },
           {
             "name": "Springboot",
@@ -412,19 +417,14 @@
             "icon": "assets/spring-boot-logo.png"
           },
           {
-            "name": "YouTube",
+            "name": "Git",
             "type": "iconify",
-            "icon": "logos:nodejs"
+            "icon": "logos:git"
           },
           {
-            "name": "YouTube",
+            "name": "Postman",
             "type": "iconify",
             "icon": "logos:postman"
-          },
-          {
-            "name": "Framer",
-            "type": "iconify",
-            "icon": "logos:javascript"
           }
         ]
       }
