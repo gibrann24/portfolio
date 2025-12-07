@@ -302,7 +302,8 @@ full.appendChild(readLess);
         const badge = this.createElement("div", ["education-badge"]);
 
         const img = document.createElement("img");
-        img.src = item.badge;  // badge path comes from JSON
+        // img.src = item.badge;  // badge path comes from JSON
+        img.src = item["badge-image"];
         img.alt = item.institution + " logo";
 
 badge.appendChild(img);
