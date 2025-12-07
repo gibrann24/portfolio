@@ -335,6 +335,18 @@ badge.appendChild(img);
         description.textContent = item.description;
         content.appendChild(description);
 
+
+        //----ACTIVATE THIS IF YOU WANT TO USE A BULLET POINT----
+        // if (item.description && Array.isArray(item.description)) {
+        //   const ul = this.createElement("ul", ["education-description"]);
+        //   item.description.forEach(point => {
+        //     const li = document.createElement("li");
+        //     li.textContent = point;
+        //     ul.appendChild(li);
+        //   });
+        //   content.appendChild(ul);
+        // }
+
         article.appendChild(badge);
         article.appendChild(content);
         list.appendChild(article);
