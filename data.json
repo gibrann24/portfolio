@@ -212,13 +212,16 @@
         "jobs": [
           {
             "id": 1,
-            "title": "Lead Product Designer",
-            "duration": "August 2024 - August 2025",
+            "title": "UI/UX Designer",
+            "duration": "January 2022 - Jun 2022",
             "totalDuration": "1 year",
             "location": "Jakarta, Indonesia",
             "type": "",
-            "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-            "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+            "descriptionPreview": 
+            ["Designed user flows, wireframes, and high-fidelity interfaces for an event website, enhancing overall user experience.",
+            "Collaborated with Product Managers, Developers, and Senior Designers to translate requirements into intuitive and seamless user experiences."],
+            "descriptionFull": ["Developed and maintained design system components to ensure visual and functional consistency across the product.",
+            "Created interactive prototypes using Figma, streamlining communication and improving clarity during development handoffs."]
           }
         ]
       },
@@ -289,7 +292,7 @@
         "degree": "Bachelor of Computer Science",
         "badge-image": "./assets/ui.png",
         "period": "August 2018 - July 2021",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "description": "Actively involved in various student activities within the Faculty of Computer Science, including serving as Head of the faculty’s photography and videography organization (FLOCS) and taking on leadership roles in multiple large-scale faculty and university events such as open houses, graduations, startup academies, seminars, workshops, and competitions. Additionally, engaged in academic activities as a part-time tutor for Software Engineering capstone projects and Data Communication Networks."
       },
       {
         "id": 3,
@@ -435,14 +438,14 @@
     "persons": [
       {
         "id": 1,
-        "name": "Lorem ipsum dolor",
-        "subtitle": "Lorem ipsum dolor sit amet",
+        "name": "Ardhito Hendranata",
+        "subtitle": "CTO at Yourpay",
         "detail": "testing_email@gmail.com"
       },
       {
         "id": 2,
-        "name": "Lorem ipsum dolor",
-        "subtitle": "Lorem ipsum dolor sit amet",
+        "name": "Hendy Tanuarto",
+        "subtitle": "Lead Product Manager at Yourpay",
         "detail": "testing_gmail@yahoo.com"
       },
       {
