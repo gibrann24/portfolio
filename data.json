@@ -43,14 +43,14 @@
       },
       {
         "id": 2,
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Walkidde Toys",
         "thumbnail": "./assets/walkiddie.jpg",
         "chips": ["Product Owner", "Web", "Scrum", "Dashboard"],
         "url": "https://portfolio-gibran.notion.site/Walkidde-Toys-b0668741bf32417ebc4e53bd8385601b?source=copy_link"
       },
       {
         "id": 3,
-        "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "title": "Porteliér",
         "thumbnail": "./assets/portelier.jpeg",
         "chips": ["Frontend Engineer", "ReactJS", "Web", "E-Commerce"],
         "url": "https://portfolio-gibran.notion.site/Porteli-r-41a4f90cc58c4ddf95136b56f207b67a"
@@ -179,8 +179,11 @@
             "totalDuration": "8 months",
             "location": "Jakarta, Indonesia",
             "type": "Fulltime, onsite",
-            "descriptionPreview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
-            "descriptionFull": "dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+            "descriptionPreview": ["Led product initiatives to meet Taiwan financial regulations, delivering features such as lottery number generation on in-app invoices and CMS-based business hour configuration—ensuring 100% regulatory compliance and enabling smooth market operations.",
+            "Owned the design and rollout of a Taiwan ARC (Residence ID Card) validity checker, transforming a manual verification process into a fully automated system and reducing operational workload by ~80%."],
+            "descriptionFull": ["Improved DTVA (Direct Transfer Virtual Account) settlement flows for cross-border transfers from Taiwan to Indonesia, increasing transaction reliability and reducing settlement and reconciliation issues.",
+            "Reduced operational costs by introducing a three-layer bank account pre-validation system, cutting unnecessary third-party API calls by 60–70% while maintaining verification accuracy.",
+            "Designed and launched an agent disbursement dashboard, improving visibility, control, and processing efficiency for user payouts."]
           },
           {
             "id": 3,
@@ -292,7 +295,7 @@
         "degree": "Bachelor of Computer Science",
         "badge-image": "./assets/ui.png",
         "period": "August 2018 - July 2021",
-        "description": "Actively involved in various student activities within the Faculty of Computer Science, including serving as Head of the faculty’s photography and videography organization (FLOCS) and taking on leadership roles in multiple large-scale faculty and university events such as open houses, graduations, startup academies, seminars, workshops, and competitions. Additionally, engaged in academic activities as a part-time tutor for Software Engineering capstone projects and Data Communication Networks."
+        "description": "Actively involved in various student activities within the Faculty of Computer Science, including serving as Head of the faculty’s photography and videography organization and taking on leadership roles in multiple large-scale faculty and university events such as open houses, graduations, startup academies, seminars, workshops, and competitions. Additionally, contributed to academic activities as a part-time tutor for Software Engineering capstone projects and Data Communication Networks."
       },
       {
         "id": 3,
