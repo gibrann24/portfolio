@@ -657,16 +657,28 @@ p {
   transform: rotate(-90deg);
 }
 
+/* .job-list {
+  padding-left: var(--space-4xl);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  max-height: none;
+  overflow: visible;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+} */
+
+
 .job-list {
   padding-left: var(--space-4xl);
   position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-2xl);
-  max-height: 2000px;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  max-height: none;
+  overflow: visible;
 }
+
 
 .job-list::before {
   content: "";
@@ -762,23 +774,38 @@ p {
   padding: 0px;
 }
 
-.job-description .description-full {
+/* .job-description .description-full {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   transition: max-height 0.45s ease, opacity 0.35s ease;
-}
+} */
 
 .job-description .description-full p {
   margin: 0;
   padding-top: var(--space-xs);
 }
 
-.job-description.expanded .description-full {
+/* .job-description.expanded .description-full {
   max-height: 600px;
   opacity: 1;
+} */
+
+.job-description .description-full {
+  display: none;
+  opacity: 0;
+  margin-top: 0;
+  transition: opacity 0.25s ease, margin-top 0.25s ease;
 }
+
+.job-description.expanded .description-full {
+  display: block;
+  opacity: 1;
+  margin-top: var(--space-xs);
+}
+
+
 
 .job-description ul {
   margin: 0;
