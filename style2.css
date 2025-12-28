@@ -1363,6 +1363,11 @@ p {
   transform: scale(1) rotate(0deg);
 }
 
+.bold-num {
+  font-weight: 700; /* makes text bold */
+}
+
+
 /* Reduce motion for accessibility */
 @media (prefers-reduced-motion: reduce) {
   .scroll-animate,

@@ -85,61 +85,59 @@ class PortfolioDataLoader {
     }
   }
 
+  // Populate Featured Work
+  populateFeaturedWork() {
+    const { featuredWork } = this.data;
 
-// Populate Featured Work
-populateFeaturedWork() {
-  const { featuredWork } = this.data;
+    const title = document.querySelector(".work h2");
+    if (title) title.textContent = featuredWork.title;
 
-  const title = document.querySelector(".work h2");
-  if (title) title.textContent = featuredWork.title;
+    const grid = document.querySelector(".card-grid");
+    if (grid) {
+      grid.innerHTML = "";
+      featuredWork.projects.forEach((project) => {
+        const article = this.createElement("article", ["project-card"]);
 
-  const grid = document.querySelector(".card-grid");
-  if (grid) {
-    grid.innerHTML = "";
-    featuredWork.projects.forEach((project) => {
-      const article = this.createElement("article", ["project-card"]);
+        // Make card clickable if URL exists
+        if (project.url) {
+          article.style.cursor = "pointer";
+          article.addEventListener("click", () => {
+            window.open(project.url, "_blank");
+          });
+        }
 
-      // Make card clickable if URL exists
-      if (project.url) {
-        article.style.cursor = "pointer";
-        article.addEventListener("click", () => {
-          window.open(project.url, "_blank");
+        const thumbnail = this.createElement("div", ["thumbnail"]);
+        // <-- NEW: apply thumbnail image from data.json -->
+        if (project.thumbnail && project.thumbnail.length > 0) {
+          thumbnail.style.backgroundImage = `url(${project.thumbnail})`;
+        } else {
+          // optional fallback image if none provided
+          thumbnail.style.backgroundImage = `url('./assets/placeholder.png')`;
+        }
+        // recommended sizing to avoid zooming/cropping
+        thumbnail.style.backgroundSize = "contain";
+        thumbnail.style.backgroundPosition = "center";
+        thumbnail.style.backgroundRepeat = "no-repeat";
+
+        const content = this.createElement("div", ["project-content"]);
+        const heading = this.createElement("h3");
+        heading.textContent = project.title;
+
+        const chipGroup = this.createElement("div", ["chip-group"]);
+        project.chips.forEach((chipText) => {
+          const chip = this.createElement("span", ["chip"]);
+          chip.textContent = chipText;
+          chipGroup.appendChild(chip);
         });
-      }
 
-      const thumbnail = this.createElement("div", ["thumbnail"]);
-      // <-- NEW: apply thumbnail image from data.json -->
-      if (project.thumbnail && project.thumbnail.length > 0) {
-        thumbnail.style.backgroundImage = `url(${project.thumbnail})`;
-      } else {
-        // optional fallback image if none provided
-        thumbnail.style.backgroundImage = `url('./assets/placeholder.png')`;
-      }
-      // recommended sizing to avoid zooming/cropping
-      thumbnail.style.backgroundSize = "contain";
-      thumbnail.style.backgroundPosition = "center";
-      thumbnail.style.backgroundRepeat = "no-repeat";
-
-      const content = this.createElement("div", ["project-content"]);
-      const heading = this.createElement("h3");
-      heading.textContent = project.title;
-
-      const chipGroup = this.createElement("div", ["chip-group"]);
-      project.chips.forEach((chipText) => {
-        const chip = this.createElement("span", ["chip"]);
-        chip.textContent = chipText;
-        chipGroup.appendChild(chip);
+        content.appendChild(heading);
+        content.appendChild(chipGroup);
+        article.appendChild(thumbnail);
+        article.appendChild(content);
+        grid.appendChild(article);
       });
-
-      content.appendChild(heading);
-      content.appendChild(chipGroup);
-      article.appendChild(thumbnail);
-      article.appendChild(content);
-      grid.appendChild(article);
-    });
+    }
   }
-}
-
 
   // Populate Experience Section
   populateExperience() {
@@ -164,7 +162,6 @@ populateFeaturedWork() {
         badgeImg.src = company.badgeImage;
         badgeImg.alt = `${company.name} badge`;
         badge.appendChild(badgeImg);
-        
 
         const content = this.createElement("div", ["company-content"]);
 
@@ -198,7 +195,9 @@ populateFeaturedWork() {
           titleWrapper.appendChild(duration);
 
           if (job.totalDuration) {
-            const totalDuration = this.createElement("span", ["job-total-duration"]);
+            const totalDuration = this.createElement("span", [
+              "job-total-duration",
+            ]);
             totalDuration.textContent = job.totalDuration;
             jobHeader.appendChild(titleWrapper);
             jobHeader.appendChild(totalDuration);
@@ -212,57 +211,95 @@ populateFeaturedWork() {
             ? `${job.location} | ${job.type}`
             : job.location;
 
-        // Job description
-const descWrapper = this.createElement("div", ["job-description"]);
+          // Job description
+          const descWrapper = this.createElement("div", ["job-description"]);
 
-const readMore = this.createElement("button", ["job-readmore", "read-more-btn"]);
-readMore.textContent = "Read more...";
+          const readMore = this.createElement("button", [
+            "job-readmore",
+            "read-more-btn",
+          ]);
+          readMore.textContent = "Read more...";
 
-const readLess = this.createElement("button", ["job-readmore", "read-less-btn"]);
-readLess.textContent = "…Read less";
-readLess.style.display = "none";
+          const readLess = this.createElement("button", [
+            "job-readmore",
+            "read-less-btn",
+          ]);
+          readLess.textContent = "…Read less";
+          readLess.style.display = "none";
 
-// ----- PREVIEW SECTION -----
-const preview = this.createElement("div", ["description-preview"]);
-const previewList = this.createElement("ul");
+          // ----- PREVIEW SECTION -----
+          const preview = this.createElement("div", ["description-preview"]);
+          const previewList = this.createElement("ul");
 
-// If preview is an array → create bullet points
-if (Array.isArray(job.descriptionPreview)) {
-  job.descriptionPreview.forEach(item => {
-    const li = this.createElement("li");
-    li.textContent = item;
-    previewList.appendChild(li);
-  });
-} else {
-  // If it's a string → still show it inside <li>
-  const li = this.createElement("li");
-  li.textContent = job.descriptionPreview;
-  previewList.appendChild(li);
-}
+          // If preview is an array → create bullet points
+          if (Array.isArray(job.descriptionPreview)) {
+            // job.descriptionPreview.forEach(item => {
+            //   const li = this.createElement("li");
+            //   li.textContent = item;
+            //   previewList.appendChild(li);
+            // });
+            job.descriptionPreview.forEach((item) => {
+              const li = this.createElement("li");
 
-preview.appendChild(previewList);
-preview.appendChild(readMore);
+              const formattedText = item.replace(
+                /(\+?\d+(\.\d+)?%?)/g,
+                '<span class="bold-num">$1</span>'
+              );
 
-// ----- FULL SECTION -----
-const full = this.createElement("div", ["description-full"]);
-const fullList = this.createElement("ul");
+              li.innerHTML = formattedText;
+              previewList.appendChild(li);
+            });
+          } else {
+            // If it's a string → still show it inside <li>
+            const li = this.createElement("li");
+            li.textContent = job.descriptionPreview;
+            previewList.appendChild(li);
+          }
 
-if (Array.isArray(job.descriptionFull)) {
-  job.descriptionFull.forEach(item => {
-    const li = this.createElement("li");
-    li.textContent = item;
-    fullList.appendChild(li);
-  });
-} else {
-  const li = this.createElement("li");
-  li.textContent = job.descriptionFull;
-  fullList.appendChild(li);
-}
+          preview.appendChild(previewList);
+          preview.appendChild(readMore);
 
-full.appendChild(fullList);
-full.appendChild(readLess);
+          // ----- FULL SECTION -----
+          const full = this.createElement("div", ["description-full"]);
+          const fullList = this.createElement("ul");
 
-        
+          // if (Array.isArray(job.descriptionFull)) {
+          //   job.descriptionFull.forEach((item) => {
+          //     const li = this.createElement("li");
+          //     li.textContent = item;
+          //     fullList.appendChild(li);
+          //   });
+          // } else {
+          //   const li = this.createElement("li");
+          //   li.textContent = job.descriptionFull;
+          //   fullList.appendChild(li);
+          // }
+
+          if (Array.isArray(job.descriptionFull)) {
+            job.descriptionFull.forEach((item) => {
+              const li = this.createElement("li");
+
+              // Use regex to wrap numbers (e.g., 14.2%, +28.4%) with span for bold styling
+              const formattedText = item.replace(
+                /(\+?\d+(\.\d+)?%?)/g,
+                '<span class="bold-num">$1</span>'
+              );
+
+              li.innerHTML = formattedText;
+              fullList.appendChild(li);
+            });
+          } else {
+            const li = this.createElement("li");
+            const formattedText = job.descriptionFull.replace(
+              /(\+?\d+(\.\d+)?%?)/g,
+              '<span class="bold-num">$1</span>'
+            );
+            li.innerHTML = formattedText;
+            fullList.appendChild(li);
+          }
+
+          full.appendChild(fullList);
+          full.appendChild(readLess);
 
           descWrapper.appendChild(preview);
           descWrapper.appendChild(full);
@@ -306,7 +343,7 @@ full.appendChild(readLess);
         img.src = item["badge-image"];
         img.alt = item.institution + " logo";
 
-badge.appendChild(img);
+        badge.appendChild(img);
 
         const content = this.createElement("div", ["education-content"]);
 
@@ -334,7 +371,6 @@ badge.appendChild(img);
         const description = this.createElement("p", ["education-description"]);
         description.textContent = item.description;
         content.appendChild(description);
-
 
         //----ACTIVATE THIS IF YOU WANT TO USE A BULLET POINT----
         // if (item.description && Array.isArray(item.description)) {
@@ -393,7 +429,7 @@ badge.appendChild(img);
 
         category.tools.forEach((tool) => {
           const iconDiv = this.createElement("div", ["tool-icon"]);
-        
+
           if (tool.type === "svg") {
             const img = this.createElement("img", [], {
               src: tool.icon,
@@ -411,12 +447,9 @@ badge.appendChild(img);
             });
             iconDiv.appendChild(img);
           }
-        
+
           iconsContainer.appendChild(iconDiv);
         });
-        
-
-
 
         div.appendChild(heading);
         div.appendChild(iconsContainer);
