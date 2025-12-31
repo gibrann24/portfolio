@@ -562,6 +562,7 @@ p {
   display: grid;
   grid-template-columns: 80px 1fr;
   gap: var(--space-2xl);
+
 }
 
 .company-name {
