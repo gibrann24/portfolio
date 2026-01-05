@@ -334,6 +334,12 @@
             "name": "Hotjar",
             "type": "iconify",
             "icon": "logos:hotjar"
+            
+          },
+          {
+            "name": "Growthbook",
+            "type": "image",
+            "icon": "assets/growthbook.png"
           },
           {
             "name": "Miro",
@@ -453,13 +459,19 @@
       },
       {
         "id": 3,
-        "name": "Lorem ipsum dolor",
-        "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "name": "Masshuda Glencross",
+        "subtitle": "Course Coordinator for Studio 3 Build (DECO3801) - School of EECS, the University of Queensland",
         "detail": "testing_email@gmail.com"
       },
       {
         "id": 4,
-        "name": "Lorem ipsum dolor",
+        "name": "Jacqueline Taberner",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
+        "detail": "testing_email@gmail.com"
+      },
+            {
+        "id": 5,
+        "name": "Ricky Felix",
         "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit.",
         "detail": "testing_email@gmail.com"
       }
